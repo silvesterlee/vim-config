@@ -23,12 +23,18 @@ filetype on
 filetype plugin on
 filetype indent on
 
+
+set encoding=utf-8
+set fileencodings=utf-8,cp936
+set fileencoding=utf-8
+set termencoding=utf-8
+
 " Tabstops are 4 spaces
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set autoindent
+set noautoindent
 
 " Printing options
 set printoptions=header:0,duplex:long,paper:letter
@@ -38,7 +44,7 @@ set wrapscan
 
 " I'm happy to type the case of things.  I tried the ignorecase, smartcase
 " thing but it just wasn't working out for me
-set noignorecase
+set ignorecase
 
 " set the forward slash to be the slash of note.  Backslashes suck
 set shellslash
@@ -144,7 +150,7 @@ set complete=.,w,b,t
 set showfulltag
 
 " Set the textwidth to be 80 chars
-set textwidth=80
+set textwidth=0
 
 " get rid of the silly characters in separators
 set fillchars = ""
@@ -169,6 +175,7 @@ set grepprg=grep\ -nH\ $*
 " Trying out the line numbering thing... never liked it, but that doesn't mean
 " I shouldn't give it another go :)
 set relativenumber
+set number
 
 " Types of files to ignore when autocompleting things
 set wildignore+=*.o,*.class,*.git,*.svn
@@ -796,3 +803,6 @@ if has("gui_running")
   endif
 endif
 :nohls
+
+
+map <F4> <Esc>:%!python -m json.tool<CR>

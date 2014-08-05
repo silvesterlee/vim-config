@@ -1,6 +1,6 @@
 # Stuff pulled from GitHub
 
-* **AG**:             `git clone git@github.com:derekwyatt/ag.vim.git vim-ag`
+* **AG**:             `git clone https://github.com/silvesterlee/ag.vim.git vim-ag`
 * **BufKill**:        `git clone https://github.com/vim-scripts/bufkill.vim.git vim-bufkill`
 * **Completion**:     `git clone https://github.com/MarcWeber/vim-addon-completion.git vim-completion`
 * **CtrlP**:          `git clone https://github.com/kien/ctrlp.vim.git vim-ctrlp`
