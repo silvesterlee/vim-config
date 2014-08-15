@@ -234,6 +234,9 @@ map! <S-Insert> <MiddleMouse>
 nmap <silent> ,ww :set invwrap<cr>
 nmap <silent> ,wW :windo set invwrap<cr>
 
+" shortcut to open NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
 " allow command line editing like emacs
 cnoremap <C-A>      <Home>
 cnoremap <C-B>      <Left>
