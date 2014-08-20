@@ -234,9 +234,6 @@ map! <S-Insert> <MiddleMouse>
 nmap <silent> ,ww :set invwrap<cr>
 nmap <silent> ,wW :windo set invwrap<cr>
 
-" shortcut to open NERDTree
-map <C-n> :NERDTreeToggle<CR>
-
 " allow command line editing like emacs
 cnoremap <C-A>      <Home>
 cnoremap <C-B>      <Left>
@@ -288,7 +285,7 @@ nmap <silent> <C-i> 10zh
 imap <C-J>d <C-r>=substitute(system("uuidgen"), '.$', '', 'g')<CR>
 
 " Toggle fullscreen mode
-nmap <silent> <F3> :call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+" nmap <silent> <F3> :call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 
 " Underline the current line with '='
 nmap <silent> ,u= :t.\|s/./=/g\|:nohls<cr>
@@ -809,3 +806,7 @@ endif
 
 
 map <F4> <Esc>:%!python -m json.tool<CR>
+
+" tab change
+nmap <F2> :tabp<CR>
+nmap <F3> :tabn<CR>
