@@ -432,7 +432,8 @@ let g:ag_results_mapping_replacements = {
 \   'open_and_close': '<cr>',
 \   'open': 'o',
 \ }
-
+let g:agprg="ag --column"
+let g:aghighlight=1
 "-----------------------------------------------------------------------------
 " FSwitch mappings
 "-----------------------------------------------------------------------------
