@@ -495,19 +495,23 @@ let g:make_scala_fuf_mappings = 0
 "-----------------------------------------------------------------------------
 " CtrlP Settings
 "-----------------------------------------------------------------------------
-let g:ctrlp_switch_buffer = 'E'
-let g:ctrlp_tabpage_position = 'c'
+let g:ctrlp_switch_buffer = 'Et'
+let g:ctrlp_tabpage_position = 'ac'
 let g:ctrlp_working_path_mode = 'rc'
 let g:ctrlp_root_markers = ['.project.root']
+let g:ctrlp_regexp = 0
+let g:ctrlp_by_filename = 1
+let g:ctrlp_use_caching = 1
 " let g:ctrlp_custom_ignore = '\v%(/\.%(git|hg|svn)|\.%(class|o|png|jpg|jpeg|bmp|tar|jar|tgz|deb|zip)$|/target/%(quickfix|resolution-cache|streams)|/target/scala-2.10/%(classes|test-classes|sbt-0.13|cache)|/project/target|/project/project)'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn|idea)$|target',
-  \ 'file': '\v\.(exe|so|dll|class|o|png|jpg|jpeg|bmp|tar|jar|tgz|deb|zip)$',
+  \ 'file': '\v\.(exe|so|dll|class|o|gif|png|jpg|jpeg|bmp|tar|jar|tgz|deb|zip|iml)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
-let g:ctrlp_open_new_file = 'r'
-let g:ctrlp_open_multiple_files = '1ri'
-let g:ctrlp_match_window = 'max:40'
+let g:ctrlp_open_new_file = 't'
+" let g:ctrlp_open_multiple_files = '1ri'
+let g:ctrlp_open_multiple_files = 'tjr'
+let g:ctrlp_match_window = 'max:40,results:100'
 let g:ctrlp_prompt_mappings = {
   \ 'PrtSelectMove("j")':   ['<c-n>'],
   \ 'PrtSelectMove("k")':   ['<c-p>'],
