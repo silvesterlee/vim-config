@@ -502,6 +502,7 @@ let g:ctrlp_root_markers = ['.project.root']
 let g:ctrlp_regexp = 0
 let g:ctrlp_by_filename = 1
 let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 0
 " let g:ctrlp_custom_ignore = '\v%(/\.%(git|hg|svn)|\.%(class|o|png|jpg|jpeg|bmp|tar|jar|tgz|deb|zip)$|/target/%(quickfix|resolution-cache|streams)|/target/scala-2.10/%(classes|test-classes|sbt-0.13|cache)|/project/target|/project/project)'
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn|idea)$|target',
