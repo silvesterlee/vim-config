@@ -821,3 +821,5 @@ map <F4> <Esc>:%!python -m json.tool<CR>
 " tab change
 nmap <F2> :tabp<CR>
 nmap <F3> :tabn<CR>
+" EasyMotion config
+let g:EasyMotion_leader_key = '<Leader>'
