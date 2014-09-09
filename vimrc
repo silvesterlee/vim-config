@@ -407,7 +407,8 @@ nmap <S-F7> :NERDTreeClose<CR>
 
 " Show the bookmarks table on startup
 let NERDTreeShowBookmarks=1
-
+let NERDTreeWinSize=25  
+let NERDChristmasTree=1  
 " Don't display these kinds of files
 let NERDTreeIgnore=[ '\.ncb$', '\.suo$', '\.vcproj\.RIMNET', '\.obj$',
                    \ '\.ilk$', '^BuildLog.htm$', '\.pdb$', '\.idb$',
