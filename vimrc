@@ -532,6 +532,10 @@ nmap ,fm :CtrlPMixed<cr>
 " Gundo Settings
 "-----------------------------------------------------------------------------
 nmap <c-F5> :GundoToggle<cr>
+let g:gundo_right = 1
+let g:gundo_width = 30
+let g:gundo_preview_height = 30
+" let g:gundo_close_on_revert = 1
 
 "-----------------------------------------------------------------------------
 " Conque Settings
