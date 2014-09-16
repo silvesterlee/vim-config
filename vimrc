@@ -830,3 +830,21 @@ nmap <F2> :tabp<CR>
 nmap <F3> :tabn<CR>
 " EasyMotion config
 let g:EasyMotion_leader_key = '<Leader>'
+
+set cursorline
+" map <F5> :call CompileRunGcc()<CR>
+" func! CompileRunGcc()
+"     exec "w"
+"     if &filetype == 'c'
+"         exec "!g++ % -o %<"
+"         exec "! ./%<"
+"     elseif &filetype == 'cpp'
+"         exec "!g++ % -o %<"
+"         exec "! ./%<"
+"     elseif &filetype == 'java' 
+"         exec "!javac %" 
+"         exec "!java %<"
+"     elseif &filetype == 'sh'
+"         :!./%
+"     endif
+" endfunc
