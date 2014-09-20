@@ -498,6 +498,7 @@ let g:make_scala_fuf_mappings = 0
 "-----------------------------------------------------------------------------
 " CtrlP Settings
 "-----------------------------------------------------------------------------
+let g:ctrlp_max_files = 0
 let g:ctrlp_switch_buffer = 'Et'
 let g:ctrlp_tabpage_position = 'ac'
 let g:ctrlp_working_path_mode = 'rc'
