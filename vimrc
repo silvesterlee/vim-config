@@ -264,10 +264,10 @@ noremap <silent> ,ch :wincmd h<CR>:close<CR>
 noremap <silent> ,cl :wincmd l<CR>:close<CR>
 noremap <silent> ,cc :close<CR>
 noremap <silent> ,cw :cclose<CR>
-noremap <silent> ,ml <C-W>L
-noremap <silent> ,mk <C-W>K
-noremap <silent> ,mh <C-W>H
-noremap <silent> ,mj <C-W>J
+noremap <silent> ,ml <C-W>l
+noremap <silent> ,mk <C-W>k
+noremap <silent> ,mh <C-W>h
+noremap <silent> ,mj <C-W>j
 noremap <silent> <C-7> <C-W>>
 noremap <silent> <C-8> <C-W>+
 noremap <silent> <C-9> <C-W>+
@@ -849,3 +849,5 @@ set cursorline
 "         :!./%
 "     endif
 " endfunc
+
+" inoremap <buffer> <expr> <c-x><c-w> vim_addon_completion#CompleteUsing('vim_addon_completion#CompleteWordsInBuffer')
