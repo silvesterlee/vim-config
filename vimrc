@@ -214,6 +214,10 @@ nmap <silent> ,cd :lcd %:h<CR>
 nmap <silent> ,cr :lcd <c-r>=FindGitDirOrRoot()<cr><cr>
 nmap <silent> ,md :!mkdir -p %:p:h<CR>
 
+" save file
+nmap <silent> ,cs  :w<CR>
+imap <silent> ,cs  <ESC>:w<CR>
+
 " Turn off that stupid highlight search
 nmap <silent> ,n :nohls<CR>
 
@@ -401,6 +405,7 @@ nmap ,gr :Gread<cr>
 "-----------------------------------------------------------------------------
 " Toggle the NERD Tree on an off with F7
 nmap <F7> :NERDTreeToggle<CR>
+nmap <F4> :NERDTreeFind<CR>
 
 " Close the NERD Tree with Shift-F7
 nmap <S-F7> :NERDTreeClose<CR>
@@ -824,7 +829,7 @@ endif
 :nohls
 
 
-map <F4> <Esc>:%!python -m json.tool<CR>
+" map <F4> <Esc>:%!python -m json.tool<CR>
 
 " tab change
 nmap <F2> :tabp<CR>
