@@ -215,8 +215,16 @@ nmap <silent> ,cr :lcd <c-r>=FindGitDirOrRoot()<cr><cr>
 nmap <silent> ,md :!mkdir -p %:p:h<CR>
 
 " save file
-nmap <silent> ,cs  :w<CR>
-imap <silent> ,cs  <ESC>:w<CR>
+"nmap <silent> ,cs  :up<CR>
+"imap <silent> ,cs  <ESC>:up<CR>
+nmap <silent> <C-S>  :up<CR>
+imap <silent> <C-S>  <ESC>:up<CR>
+
+" quit file
+"nmap <silent> ,cq  :q<CR>
+"imap <silent> ,cq  <ESC>:q<CR>
+nmap <silent> <C-Q>  :q<CR>
+imap <silent> <C-Q>  <ESC>:q<CR>
 
 " Turn off that stupid highlight search
 nmap <silent> ,n :nohls<CR>
@@ -272,6 +280,10 @@ noremap <silent> ,ml <C-W>l
 noremap <silent> ,mk <C-W>k
 noremap <silent> ,mh <C-W>h
 noremap <silent> ,mj <C-W>j
+noremap <silent> <C-RIGHT> <C-W>l
+noremap <silent> <C-UP> <C-W>k
+noremap <silent> <C-LEFT> <C-W>h
+noremap <silent> <C-DOWN> <C-W>j
 noremap <silent> <C-7> <C-W>>
 noremap <silent> <C-8> <C-W>+
 noremap <silent> <C-9> <C-W>+
