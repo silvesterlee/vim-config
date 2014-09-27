@@ -868,3 +868,11 @@ set cursorline
 " endfunc
 
 " inoremap <buffer> <expr> <c-x><c-w> vim_addon_completion#CompleteUsing('vim_addon_completion#CompleteWordsInBuffer')
+"
+" taglist options
+let Tlist_Display_Prototype = 0
+let Tlist_Show_Menu = 1
+let Tlist_Show_One_File = 1
+let Tlist_Use_Right_Window = 1
+nnoremap <silent> <F8> :TlistToggle<CR>
+inoremap <silent> <F8> <ESC>:TlistToggle<CR>
