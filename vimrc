@@ -30,9 +30,9 @@ set fileencoding=utf-8
 set termencoding=utf-8
 
 " Tabstops are 4 spaces
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set noautoindent
 
@@ -276,10 +276,10 @@ noremap <silent> ,ch :wincmd h<CR>:close<CR>
 noremap <silent> ,cl :wincmd l<CR>:close<CR>
 noremap <silent> ,cc :close<CR>
 noremap <silent> ,cw :cclose<CR>
-noremap <silent> ,ml <C-W>l
-noremap <silent> ,mk <C-W>k
-noremap <silent> ,mh <C-W>h
-noremap <silent> ,mj <C-W>j
+noremap <silent> ,ml <C-W>L
+noremap <silent> ,mk <C-W>K
+noremap <silent> ,mh <C-W>H
+noremap <silent> ,mj <C-W>J
 noremap <silent> <C-RIGHT> <C-W>l
 noremap <silent> <C-UP> <C-W>k
 noremap <silent> <C-LEFT> <C-W>h
@@ -382,11 +382,12 @@ endfunction
 set synmaxcol=2048
 
 " I don't like it when the matching parens are automatically highlighted
-let loaded_matchparen = 1
+" let loaded_matchparen = 1
+hi MatchParen ctermbg=blue guibg=lightblue
 
 " Highlight the current line and column
 " Don't do this - It makes window redraws painfully slow
-set nocursorline
+set cursorline
 set nocursorcolumn
 
 if has("mac")
@@ -427,6 +428,7 @@ let NERDTreeShowBookmarks=1
 let NERDTreeWinSize=25  
 let NERDChristmasTree=1  
 let NERDTreeHighlightCursorline=1
+let NERDTreeShowHidden=1
 " let loaded_nerd_tree=0
 " Don't display these kinds of files
 let NERDTreeIgnore=[ '\.ncb$', '\.suo$', '\.vcproj\.RIMNET', '\.obj$',
@@ -849,7 +851,6 @@ nmap <F3> :tabn<CR>
 " EasyMotion config
 let g:EasyMotion_leader_key = '<Leader>'
 
-set cursorline
 " map <F5> :call CompileRunGcc()<CR>
 " func! CompileRunGcc()
 "     exec "w"
@@ -877,3 +878,8 @@ let Tlist_Use_Right_Window = 1
 nnoremap <silent> <F8> :TlistToggle<CR>
 inoremap <silent> <F8> <ESC>:TlistToggle<CR>
 let Tlist_GainFocus_On_ToggleOpen = 1
+
+" Vjde options
+set cfu=VjdeCompletionFun
+" let g:vjde_lib_path="build/classes"
+let vjde_use_project = 1
