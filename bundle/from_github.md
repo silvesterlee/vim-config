@@ -26,4 +26,4 @@
 * **VisIncr**:        `git clone https://github.com/vim-scripts/VisIncr.git vim-visincr`
 * **XPTemplate**:     `git clone https://github.com/drmingdrmer/xptemplate.git vim-xptemplate`
 * **Taglist**:        `git clone https://github.com/vim-scripts/taglist.vim.git vim-taglist`
-* **JDE**:            `git clone https://github.com/vim-scripts/Vim-JDE vim-jde`
+* **JDE**:            `git clone https://github.com/silvesterlee/Vim-JDE.git vim-jde`
