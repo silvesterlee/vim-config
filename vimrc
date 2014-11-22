@@ -823,6 +823,7 @@ iab Taht       That
 iab taht       that
 iab Teh        The
 iab teh        the
+iab xdate <c-r>=strftime("20%y年%m月%d日 %H:%M:%S")<cr>
 
 "-----------------------------------------------------------------------------
 " Set up the window colors and size
